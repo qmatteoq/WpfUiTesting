@@ -38,12 +38,6 @@ steps:
     configuration: '$(buildConfiguration)'
     msbuildArgs: '/restore /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=SideloadOnly /p:AppxPackageSigningEnabled=false'
 
-# - task: VSBuild@1
-#   inputs:
-#     solution: '**/WpfUiTesting.Tests.sln'
-#     platform: 'Any CPU'
-#     configuration: '$(buildConfiguration)'
-
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifact: drop'
   inputs:
