@@ -26,11 +26,6 @@ steps:
   inputs:
     version: '3.0.100-preview8-013656'
 
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    restoreSolution: '**/*.sln'
-    feedsToUse: 'select'
 - task: VSBuild@1
   inputs:
     platform: '$(buildPlatform)'
