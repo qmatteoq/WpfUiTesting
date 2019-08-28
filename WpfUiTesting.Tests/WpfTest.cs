@@ -11,7 +11,7 @@ namespace WpfUiTesting.Tests
     {
         protected const string WindowsApplicationDriverUrl = "http://127.0.0.1:4723";
         //private const string WpfAppId = @"C:\Users\mpagani\Source\Samples\WpfUiTesting\WpfUiTesting.Wpf\bin\Debug\WpfUiTesting.Wpf.exe";
-        private const string WpfAppId = @"WpfUiTesting_e627vcndsd2rc!App";
+        private const string WpfAppId = @"WpfUiTesting_kj8cgt614nj8e!App";
 
         protected static WindowsDriver<WindowsElement> session;
         protected static WindowsDriver<WindowsElement> DesktopSession;
@@ -78,6 +78,7 @@ namespace WpfUiTesting.Tests
         }
 
         [TestMethod]
+        [Ignore]
         public void AddWrongNameToTextBox()
         {
             var txtName = session.FindElementByAccessibilityId("txtName");

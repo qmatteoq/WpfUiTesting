@@ -8,7 +8,7 @@
 
   <Identity
     Name="WpfUiTesting"
-    Publisher="CN=Matteo Pagani, O=Matteo Pagani, L=Como, S=Como, C=IT"
+    Publisher="CN=MicrosoftAppConsult"
     Version="1.0.1.0" />
 
   <Properties>
